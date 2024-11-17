@@ -1,0 +1,126 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #285f2b;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Cambiado a 'flex-start' para alinear el contenido al inicio */
+    min-height: 100vh; /* Cambiado de 'height' a 'min-height' */
+    margin: 0;
+    color: #333;
+}
+
+h2 {
+    color: #4CAF50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Contenedor para el formulario con márgenes en el top y bottom */
+.form-container {
+    width: 100%;
+    max-width: 500px; /* Máximo ancho del formulario */
+    margin: 10px; /* Márgenes adaptables */
+    padding: 10px; /* Padding para asegurar espacio dentro del contenedor */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
+}
+
+/* Estilos del formulario */
+#registerForm {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Asegura que el formulario ocupe todo el ancho disponible */
+    text-align: center;
+    box-sizing: border-box;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    text-align: left;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: calc(100% - 20px); /* Ancho total menos el padding */
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+
+textarea {
+    resize: vertical;
+    height: 80px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+p {
+    margin-top: 20px;
+    color: #555;
+}
+
+p a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para la dirección */
+#direccion {
+    max-height: 100px; /* Mayor altura para la dirección */
+}
+
+/* Botón de registro */
+#register-btn {
+    width: 40%;
+}
+
+/* Media Query para pantallas más pequeñas */
+@media (max-width: 600px) {
+    .form-container {
+        padding: 20px; /* Más padding en pantallas pequeñas */
+    }
+
+    button {
+        font-size: 14px; /* Ajusta el tamaño de fuente en dispositivos pequeños */
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    textarea {
+        font-size: 14px; /* Ajusta el tamaño de fuente de los inputs */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Ajusta el tamaño del título */
+    }
+}
